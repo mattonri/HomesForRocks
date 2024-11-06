@@ -1,0 +1,14 @@
+/* styles.css */
+
+body {
+    padding-top: 70px;
+}
+
+header, footer {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+}
+
+footer {
+    text-align: center;
+}
