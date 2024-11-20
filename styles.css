@@ -12,9 +12,6 @@
 html {
     background-color: var(--bs-light);
 }
-body {
-    padding-top: 70px;
-}
 
 header, footer {
     background-color: #f8f9fa;
