@@ -8,19 +8,88 @@
     --bs-light: #EAE0D5;
     --bs-dark: #0A0908;
 }
-/* styles.css */
+
+/* Global Styles */
 html {
-    background-color: var(--bs-light);
+    background-color: var(--bs-light); /* Light background */
 }
+
 body {
-    padding-top: 70px;
+    padding-top: 70px; /* Space for fixed header */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full page height */
 }
 
-header, footer {
-    background-color: #f8f9fa;
-    padding: 1rem 0;
+main {
+    flex: 1; /* Pushes the footer to the bottom */
 }
 
+/* Header (Navigation Bar) */
+header {
+    background-color: var(--bs-dark); /* Dark background for navbar */
+    position: fixed; /* Make it sticky */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030; /* Ensure it appears above other content */
+}
+
+header .navbar-brand {
+    color: #ffffff; /* White text */
+    font-size: 1.5rem; /* Adjust brand font size */
+    text-transform: uppercase;
+}
+
+header .navbar-brand:hover,
+header .navbar-brand:focus {
+    color: #cccccc; /* Lighter color on hover */
+    text-decoration: none;
+}
+
+header .navbar-nav .nav-link {
+    color: #ffffff; /* White text for links */
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+header .navbar-nav .nav-link:hover,
+header .navbar-nav .nav-link:focus {
+    color: #cccccc; /* Lighter color on hover */
+    text-decoration: underline;
+}
+
+header .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5); /* Lighter border for toggle */
+}
+
+header .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Footer (Copyright Section) */
 footer {
-    text-align: center;
+    background-color: var(--bs-dark); /* Dark background */
+    color: #ffffff; /* White text */
+    text-align: center; /* Center align text */
+    padding: 1rem 0; /* Padding for spacing */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+footer p a {
+    color: #ffffff; /* Links in footer are white */
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #cccccc; /* Lighter color on hover */
+    text-decoration: underline;
 }
