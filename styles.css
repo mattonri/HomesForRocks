@@ -1,5 +1,17 @@
+:root {
+    --bs-primary: #22333B;  /* Replace with your desired primary color */
+    --bs-secondary: #5E503F;
+    --bs-success: #28a745;
+    --bs-danger: #dc3545;
+    --bs-warning: #ffc107;
+    --bs-info: #17a2b8;
+    --bs-light: #EAE0D5;
+    --bs-dark: #0A0908;
+}
 /* styles.css */
-
+html {
+    background-color: var(--bs-light);
+}
 body {
     padding-top: 70px;
 }
