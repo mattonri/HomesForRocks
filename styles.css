@@ -9,6 +9,18 @@
     --bs-dark: #0A0908;
 }
 
+p {
+    text-indent: 30px; /* Adjust the value to set the indentation */
+}
+
+.centered-paragraph {
+    text-align: center;  /* Center the text inside the paragraph */
+    width: 80%;           /* Set the width of the paragraph */
+    margin-left: auto;    /* Center horizontally by setting left margin to auto */
+    margin-right: auto;   /* Center horizontally by setting right margin to auto */
+    text-indent: 0;       /* Ensure no indentation */
+}
+
 /* Global Styles */
 html {
     background-color: var(--bs-light); /* Light background */
