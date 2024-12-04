@@ -53,12 +53,6 @@ header .navbar-brand {
     text-transform: uppercase;
 }
 
-header .navbar-brand:hover,
-header .navbar-brand:focus {
-    color: #cccccc; /* Lighter color on hover */
-    text-decoration: none;
-}
-
 header .navbar-nav .nav-link {
     color: #ffffff; /* White text for links */
     font-size: 1rem;
